@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "target": "es5",
+        "moduleResolution": "node",
+        "strict": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "dom",
+            "es2017"
+        ],
+        "baseUrl": "src/",
+        "paths": {
+            "@/*": ["./*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "node_modules/@types/**/*.d.ts",
+        "src/types/**/*.d.ts"
+    ],
+    "exclude": ["node_modules/**", "dist/**"]
+}
