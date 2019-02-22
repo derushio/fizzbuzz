@@ -11,6 +11,6 @@ process.on('message', (message: { workerId: number, nums: number[] }) => {
         return FizzBuzz.checkFizzbuzz(index);
     });
 
-    fs.writeFileSync(`./temp/page${message.workerId}.csv`, JSON.stringify(fizzbuzz).replace(/\[|\]/g, ''));
+    fs.writeFileSync(`./temp/page${message.workerId}.csv`, JSON.stringify(fizzbuzz).replace(/\[|\]|"/g, ''));
     process.send!({ workerId: message.workerId });
 });
