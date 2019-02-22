@@ -5,7 +5,7 @@
 * `./result/result.csv` に結果が書き出される
 * マルチスレッドで動く
     * 結構早い
-* `CPU: i7 5557U` `Memory: 16GB` 環境で1億以上のFizzBuzzを実行できる
+* `CPU: i7 5557U, Memory: 16GB, Storage: SSD` 環境で1億以上のFizzBuzzを実行できる
     * 4プロセス起動で1分以内に完了
 
 ## 必要物
