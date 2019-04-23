@@ -61,12 +61,15 @@ export default class FizzBuzz {
      * @return numbersList
      */
     protected static sliceNumbers(num: number, numProcesses: number, numPerProcess: number) {
+        /** range始点 */
         let point = 1;
         return _.range(numProcesses).map(() => {
+            /** range終点 */
             let nextPoint = point + numPerProcess;
             if (num <= nextPoint) {
                 // 最後だったら num + 1 する
                 // rangeはその数を含まない
+                // もっとスマートな方法はないのか？
                 nextPoint = num + 1;
             }
 
