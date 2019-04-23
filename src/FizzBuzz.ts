@@ -95,7 +95,7 @@ export default class FizzBuzz {
     }
 
     /**
-     * プロセスにリスナを設置
+     * プロセスの終了待ち
      * @param workers
      * @return promise リスナのプロミスを返す
      */
